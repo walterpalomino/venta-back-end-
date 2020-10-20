@@ -32,6 +32,9 @@ public class Producto {
 	@Column(name = "p_descripcion")
 	private String descripcion;
 	
+	@Column(name="p_precio")
+	private float precio;
+	
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "p_categoria")
 	private Categoria categoria;
